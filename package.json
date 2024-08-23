@@ -2,7 +2,7 @@
   "name": "git-blame-w77-fork",
   "displayName": "Git Blame W77 Fork",
   "description": "It is an extension for VS code, which can show git blame in editor and can run git gui blame.",
-  "publisher": "W77",
+  "publisher": "vst",
   "version": "0.1.8",
   "engines": {
     "vscode": "^1.73.0"
