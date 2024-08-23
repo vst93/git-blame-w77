@@ -55,7 +55,12 @@ export class Util {
      * @return string
      */
     public date(timestamp: number) {
-        return new Date(timestamp * 1000).toLocaleDateString('sv-SE');
+        return new Date(timestamp * 1000).toLocaleDateString('zh-CN', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour12: false
+        });
     }
     
     /**

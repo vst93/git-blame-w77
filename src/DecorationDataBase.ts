@@ -23,7 +23,8 @@ export class DecorationDataBase {
             this.cache[rec.hash] = {
                 decorationOptions: {
                     contentText: this._lineText(rec),
-                    color: this._color(rec),
+                    // color: this._color(rec),
+                    backgroundColor: this._color(rec),
                 }
             }
         }
@@ -67,9 +68,8 @@ export class DecorationDataBase {
     private _lineText(rec: BlameData) {
         const util = Util.getInstance();
         const noBreakSpace = this._noBreakSpace;
-        return util.fillAndTruncate(rec.hash, 7, noBreakSpace)
-                +' '
-                +util.date(rec.authorTime)
+        // return util.fillAndTruncate(rec.hash, 7, noBreakSpace)
+        return util.date(rec.authorTime)
                 +' '
                 +util.fillAndTruncate(rec.authorMail, 7, noBreakSpace, '...');
     }

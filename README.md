@@ -1,7 +1,8 @@
-# Git Blame W77
+# Git Blame W77 Fork
 
 ## Description
-It is an extension for VS code, which can show git blame in editor and can run git gui blame.
+forked from https://github.com/wojtek77/git-blame-w77 , adjusted the display style according to my own needs.
+`It is an extension for VS code, which can show git blame in editor and can run git gui blame.`
 
 ## How to use
 1. Press **Alt + B** on the text editor to show or hide the blame decoration
